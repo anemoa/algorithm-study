@@ -31,6 +31,9 @@ print(S)
 for _ in range(M):
     i, j = list(map(int, sys.stdin.readline().strip().split()))
 
+    i = i - 1
+    j = j - 1
+
     if i != 0:
         numbers = S[j] - S[i - 1]
         print(numbers)
